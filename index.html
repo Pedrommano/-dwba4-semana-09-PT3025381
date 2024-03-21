@@ -8,78 +8,80 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="icon" href="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/favicon.ico"
     type="image/x-icon">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
 </head>
 
 
 <body>
-  <div style="text-align: right;">
-     <a href="index.html">HOME</a> |
-      <a href="Eventos.html">EVENTOS</a> |
-      <a href="contato.html">CONTATO</a> |
-      <a href="#">SOBRE</a> |
-      <a href="Entrar.htm">ENTRAR</a> |
+  <div class="menu">
+    <a href="index.html">HOME</a> 
+    <a href="Eventos.html">EVENTOS</a> 
+    <a href="contato.html">CONTATO</a> 
+    <a href="#">SOBRE</a> 
+    <a href="Entrar.htm" id="entrar">ENTRAR</a> 
   </div>
 
 
-  <br> <br>
 
-
+  
   <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/Logo.jpg?raw=true"
-    alt="Istituto federal de São Paulo">
+    alt="Instituto Federal de São Paulo" class="logo">
 
 
   <h5>Cursos</h5>
-  <ul>
+  <ul class="cursos">
     <li><a href="pagina2.html">Analise e Desenvolvimento de Sistemas</a></li>
     <li><a href="pagina3.html">Engenharia de Produção</a></li>
     <li><a href="pagina4.html">Gestão em Tecnologia da Informação</a></li>
     <li><a href="pagina5.html">Letras</a></li>
-    <li><a href="pagina6.html">Gestão Publica</a></li>
-  </ul>
+    <li><a href="pagina6.html">Gestão Pública</a></li>
   </ul>
 
 
-  <h5>Eventos</h5>
-  <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/SEJA_RARO.jpg?raw=true" width="450px"
-    height="300px" alt="Evento - Palestra">
-  <figcaption>Aniversario do IFSP Pirituba - palestra agusto melo</figcaption>
+  <h1>Acontece no IFSP</h1>
+  <div class="evento">
+    <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/SEJA_RARO.jpg?raw=true" width="450px"
+      height="300px" alt="Evento - Palestra" class="evento">
+  </div>
+  <figcaption id="legenda">Aniversário do IFSP Pirituba - palestra Agusto Melo</figcaption>
 
 
   <h3>Sobre a biblioteca</h3>
 
-  <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/library.jpeg?raw=true" alt="Biblioteca">
+  <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/library.jpeg?raw=true" alt="Biblioteca"
+    class="biblioteca">
 
-  <h3>Conheça os novos titulos disponiveis na nossa biblioteca</h3>
+  <h3>Conheça os novos títulos disponíveis na nossa biblioteca</h3>
 
   <h6>Publicado: Quarta-Feira 14 de Agosto de 2019</h6>
 
 
-  <h2>Conheça o SUAP</h2>
+  <h2>Conheça os desafios da Inovação</h2>
 
   <a href="https://youtu.be/6h6lpOz-fuE?si=FHyIW5I3BqiA3R-x">
     <video width="500" height="340" controls></video>
   </a>
+<div class="Esquerda"
+  
   <br>
-  <a href="#">
-    <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/MoveTop.png?raw=true" width="30px"
-      height="30px"   title="Mover para o topo""/>
+  <a href="#" class="move-top">
+    <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/MoveTop.png?raw=true" width="30px" height="30px"
+      title="Mover para o topo" />
   </a>
   <br>
-  <a href="https://www.facebook.com/ifsppirituba">
+  <a href="https://www.facebook.com/ifsppirituba" id="facebook-link" class="social-link">
     <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/facebook.png?raw=true" width="30px"
-      height="30px"  title="IFSP Facebook"/>
+      height="30px" title="IFSP Facebook" />
   </a>
   <script src="script.js"></script>
   <footer>
-
-
-    <addres>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato:
-      (011) 2504-0100</addres>
+    <address>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato:
+      (011) 2504-0100</address>
   </footer>
 
+</div>
 
 </body>
-
-
 
 </html>
