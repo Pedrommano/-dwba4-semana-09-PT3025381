@@ -4,32 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
 <body>
 
-  <div style="text-align: right;">
-     <a href="index.html">HOME</a> |
-      <a href="Eventos.html">EVENTOS</a> |
-      <a href="contato.html">CONTATO</a> |
-      <a href="#">SOBRE</a> |
-      <a href="Entrar.htm">ENTRAR</a> |
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="Eventos.html">EVENTOS</a></li>
+      <li><a href="contato.html">CONTATO</a></li>
+      <li class="submenu-item">
+        <<a href="#">CURSOS</a>
+        <ul class="submenu">
+          <li><a href="#">Opção 1</a></li>
+          <li><a href="#">Opção 2</a></li>
+        </ul>
+      </li>
+      <li class="entrar"><a href="Entrar.html">ENTRAR</a></li>
+    </ul>
   </div>
+  <br>
   <br>
   <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/Logo.jpg?raw=true"
     alt="Istituto federal de São Paulo">
 
   <h1>Entrar</h1>
 
-  <form action="/login" method="post">
-    <label for="usuario">Usuário:</label>
-    <input type="text" id="usuario" name="usuario" required><br><br>
+  <form action="/login" method="post" class="login-form">
+    <div class="input-group">
+      <label for="usuario">Usuário:</label>
+      <input type="text" id="usuario" name="usuario" required class="input-field usuario-field">
+    </div>
 
-    <label for="senha">Senha:</label>
-    <input type="password" id="senha" name="senha" required><br><br>
+    <div class="input-group">
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required class="input-field senha-field">
+    </div>
 
-    <input type="submit" value="Enviar">
-    <a href="/esqueci_senha">Esqueci a senha</a>
-    <br><br>
+    <input type="submit" value="Enviar" class="submit-button">
+    <a href="/esqueci_senha" class="forgot-password">Esqueci a senha</a>
+  </form>
     
 
     <a href="https://www.facebook.com/ifsppirituba">
